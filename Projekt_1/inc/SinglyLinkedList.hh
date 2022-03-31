@@ -2,6 +2,11 @@
 #define SINGLY_LINKED_LIST_HH
 #include "libraries.hh"
 
+/* to do
+    void insert(const T& newElement, int index);
+    void remove(const T& element);
+*/
+
 template <typename T>
 class SinglyLinkedList {
     struct node {
@@ -25,14 +30,14 @@ class SinglyLinkedList {
     T back();
     //void insert();
     //void remove(T element);
-    //void operator[]();
+    T & operator[](const uint &index);
 };
 
 template <typename T>
 SinglyLinkedList<T>::SinglyLinkedList()
 {
-    this->head = NULL; 
-    this->tail = NULL;
+  this->head = NULL; 
+  this->tail = NULL;
 }
 
 template <typename T>
@@ -82,7 +87,10 @@ void SinglyLinkedList<T>::removeFront()
     cout << "Lista jest pusta" << endl;
   else {
     node* temp = this->head;
-    this->head = temp->next;
+    if (this->head == this->tail)
+      this->head = this->tail = NULL;
+    else
+      this->head = temp->next;
     delete temp;
     list_size--;
   }
@@ -95,10 +103,10 @@ void SinglyLinkedList<T>::addBack(T element)
   p->value = element;
   p->next = NULL;
   
-  if (this->empty()) {
+  if (this->empty())
     this->head = this->tail = p;
-  }
-  else {
+  else 
+  {
     tail->next = p;
     this->tail = p;
   }
@@ -112,20 +120,20 @@ void SinglyLinkedList<T>::removeBack()
 
   if(this->empty())
     cout << "Lista jest pusta" << endl;
-  else if (this->tail==this->head) {
-    delete temp;
+  else if (this->tail==this->head) 
+  {
     this->tail = this->head = NULL;
     list_size--;
   }
-  else {
-    while(temp->next->next) {
-      temp = temp->next;
-    }
+  else 
+  {
+    while(temp->next->next) { temp = temp->next; }
     delete (temp->next);
     temp->next = NULL;
     this->tail = temp;
     list_size--;
   }
+  delete temp;
 }
 
 template<typename T>
@@ -145,20 +153,61 @@ T SinglyLinkedList<T>::back()
   else
     return this->tail->value;
 }
+
 /*
 template<typename T>
 void SinglyLinkedList<T>::remove(T element)
 { 
-  node* prev = this->head;
-  node* next = this->head->next;
+  node* prev_elem = this->head;
+  node* next_elem = this->head->next;
 
   if (this->empty())
     cout << "Lista jest pusta" << endl;
-  else if (this->head==this->tail) {
-    if (head->value==element) {
-      this->removeFront();
-      this->head = this->tail = NULL;
+  else if (list_size==1 && this->head->value==element)
+    this->removeFront();
+  else 
+  {
+    while (next_elem->next != this->tail) 
+    {
+      if (next_elem->value == element)
+      {
+        node* temp = new node;
+        temp = next_elem;
+        prev_elem->next = next_elem->next;
+        next_elem = next_elem->next;
+        delete temp;
+      }
+      else  
+      {
+        prev_elem = prev_elem->next;
+        next_elem = next_elem->next;
+      }
+    }
+    //delete prev_elem;
+    //delete next_elem;
   }
 }*/
 
+template<typename T>
+T& SinglyLinkedList<T>::operator[](const uint &index)
+{
+  try {
+    if (index<list_size) {
+      node* p = this->head;
+      for (uint i=0;i<index;i++) {
+        p = p->next;
+      }
+      return p->value;
+      delete p;
+    }
+    else
+      throw(index);
+  }
+
+  catch(...) {
+    cout << "Wrong index number" << endl;
+    cout << "Last possible index number is [" << list_size-1 << "] with value: ";
+    return this->tail->value;
+  }
+}
 #endif
