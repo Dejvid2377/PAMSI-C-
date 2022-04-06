@@ -4,8 +4,7 @@
 
 template<typename T>
 class StackTab {
-    int size;
-    int t_ptr; 
+    int size, t_ptr; 
     T* Array;
   public:
     StackTab() { size={10}; t_ptr={0}; Array={new T [size]}; }
@@ -62,7 +61,7 @@ T StackTab<T>::pop()
 template<typename T>
 void StackTab<T>::stackExtend()
 {
-  cout << "Tablica przepelniona, powiekszam" << endl;
+  cout << "Stack overloaded, making extension..." << endl;
   int newSize = 2*this->size;
   T* newArray = new T [newSize];
   for (int i=0;i<size;i++)
