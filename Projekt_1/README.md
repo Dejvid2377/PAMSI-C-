@@ -1,1 +1,4 @@
-Dawid Krekora 254003
+mkdir build
+cd build
+cmake ..
+make

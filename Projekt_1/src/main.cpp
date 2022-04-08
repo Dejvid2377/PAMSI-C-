@@ -1,7 +1,7 @@
-#include "libraries.hh"
-#include "All_Structures.hh"
+#include <iostream>
 
-
-int main() {
-  return 0;
+int main(int argc, char* argv[])
+{
+    std::cout<< "Struktury danych"<<std::endl;
+    return 0;
 }
