@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/src/main.cpp
+iostream
+-
+
