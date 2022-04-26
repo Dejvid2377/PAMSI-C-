@@ -57,38 +57,38 @@ include CMakeFiles/efficiency_tests.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/efficiency_tests.dir/flags.make
 
-CMakeFiles/efficiency_tests.dir/src/main.cpp.o: CMakeFiles/efficiency_tests.dir/flags.make
-CMakeFiles/efficiency_tests.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/efficiency_tests.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/efficiency_tests.dir/src/main.cpp.o -c /home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/src/main.cpp
+CMakeFiles/efficiency_tests.dir/src/time_test.cpp.o: CMakeFiles/efficiency_tests.dir/flags.make
+CMakeFiles/efficiency_tests.dir/src/time_test.cpp.o: ../src/time_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/efficiency_tests.dir/src/time_test.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/efficiency_tests.dir/src/time_test.cpp.o -c /home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/src/time_test.cpp
 
-CMakeFiles/efficiency_tests.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/efficiency_tests.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/src/main.cpp > CMakeFiles/efficiency_tests.dir/src/main.cpp.i
+CMakeFiles/efficiency_tests.dir/src/time_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/efficiency_tests.dir/src/time_test.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/src/time_test.cpp > CMakeFiles/efficiency_tests.dir/src/time_test.cpp.i
 
-CMakeFiles/efficiency_tests.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/efficiency_tests.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/src/main.cpp -o CMakeFiles/efficiency_tests.dir/src/main.cpp.s
+CMakeFiles/efficiency_tests.dir/src/time_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/efficiency_tests.dir/src/time_test.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/src/time_test.cpp -o CMakeFiles/efficiency_tests.dir/src/time_test.cpp.s
 
-CMakeFiles/efficiency_tests.dir/src/main.cpp.o.requires:
+CMakeFiles/efficiency_tests.dir/src/time_test.cpp.o.requires:
 
-.PHONY : CMakeFiles/efficiency_tests.dir/src/main.cpp.o.requires
+.PHONY : CMakeFiles/efficiency_tests.dir/src/time_test.cpp.o.requires
 
-CMakeFiles/efficiency_tests.dir/src/main.cpp.o.provides: CMakeFiles/efficiency_tests.dir/src/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/efficiency_tests.dir/build.make CMakeFiles/efficiency_tests.dir/src/main.cpp.o.provides.build
-.PHONY : CMakeFiles/efficiency_tests.dir/src/main.cpp.o.provides
+CMakeFiles/efficiency_tests.dir/src/time_test.cpp.o.provides: CMakeFiles/efficiency_tests.dir/src/time_test.cpp.o.requires
+	$(MAKE) -f CMakeFiles/efficiency_tests.dir/build.make CMakeFiles/efficiency_tests.dir/src/time_test.cpp.o.provides.build
+.PHONY : CMakeFiles/efficiency_tests.dir/src/time_test.cpp.o.provides
 
-CMakeFiles/efficiency_tests.dir/src/main.cpp.o.provides.build: CMakeFiles/efficiency_tests.dir/src/main.cpp.o
+CMakeFiles/efficiency_tests.dir/src/time_test.cpp.o.provides.build: CMakeFiles/efficiency_tests.dir/src/time_test.cpp.o
 
 
 # Object files for target efficiency_tests
 efficiency_tests_OBJECTS = \
-"CMakeFiles/efficiency_tests.dir/src/main.cpp.o"
+"CMakeFiles/efficiency_tests.dir/src/time_test.cpp.o"
 
 # External object files for target efficiency_tests
 efficiency_tests_EXTERNAL_OBJECTS =
 
-efficiency_tests: CMakeFiles/efficiency_tests.dir/src/main.cpp.o
+efficiency_tests: CMakeFiles/efficiency_tests.dir/src/time_test.cpp.o
 efficiency_tests: CMakeFiles/efficiency_tests.dir/build.make
 efficiency_tests: CMakeFiles/efficiency_tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable efficiency_tests"
@@ -99,7 +99,7 @@ CMakeFiles/efficiency_tests.dir/build: efficiency_tests
 
 .PHONY : CMakeFiles/efficiency_tests.dir/build
 
-CMakeFiles/efficiency_tests.dir/requires: CMakeFiles/efficiency_tests.dir/src/main.cpp.o.requires
+CMakeFiles/efficiency_tests.dir/requires: CMakeFiles/efficiency_tests.dir/src/time_test.cpp.o.requires
 
 .PHONY : CMakeFiles/efficiency_tests.dir/requires
 

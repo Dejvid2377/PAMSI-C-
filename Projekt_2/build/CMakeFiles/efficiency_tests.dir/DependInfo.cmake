@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/src/main.cpp" "/home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/build/CMakeFiles/efficiency_tests.dir/src/main.cpp.o"
+  "/home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/src/time_test.cpp" "/home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/build/CMakeFiles/efficiency_tests.dir/src/time_test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

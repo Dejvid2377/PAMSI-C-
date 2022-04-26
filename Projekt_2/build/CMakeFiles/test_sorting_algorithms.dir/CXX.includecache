@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+../include/algorithms/All_Structures.hh
+bubblesort.h
+../include/algorithms/bubblesort.h
+heapsort.h
+../include/algorithms/heapsort.h
+insertsort.h
+../include/algorithms/insertsort.h
+introsort.h
+../include/algorithms/introsort.h
+mergesort.h
+../include/algorithms/mergesort.h
+quicksort.h
+../include/algorithms/quicksort.h
+shellsort.h
+../include/algorithms/shellsort.h
+
 ../include/algorithms/bubblesort.h
 vector
 -
@@ -27,7 +43,11 @@ iostream
 -
 fstream
 -
+algorithm
+-
 vector
+-
+ctime
 -
 
 ../include/algorithms/mergesort.h
@@ -35,8 +55,8 @@ libraries.hh
 ../include/algorithms/libraries.hh
 
 ../include/algorithms/quicksort.h
-vector
--
+libraries.hh
+../include/algorithms/libraries.hh
 
 ../include/algorithms/shellsort.h
 vector
@@ -629,18 +649,6 @@ cassert
 /home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/src/test_sorting_algorithms.cpp
 catch2/catch.hpp
 /home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/src/catch2/catch.hpp
-algorithms/bubblesort.h
-/home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/src/algorithms/bubblesort.h
-algorithms/insertsort.h
-/home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/src/algorithms/insertsort.h
-algorithms/heapsort.h
-/home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/src/algorithms/heapsort.h
-algorithms/mergesort.h
-/home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/src/algorithms/mergesort.h
-algorithms/shellsort.h
-/home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/src/algorithms/shellsort.h
-algorithms/quicksort.h
-/home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/src/algorithms/quicksort.h
-algorithms/introsort.h
-/home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/src/algorithms/introsort.h
+algorithms/All_Structures.hh
+/home/dawid/Dokumenty/studia/IV_Semestr/PAMSI/pamsi_dawid_krekora/Projekt_2/src/algorithms/All_Structures.hh
 

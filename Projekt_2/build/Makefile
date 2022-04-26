@@ -136,33 +136,6 @@ test_sorting_algorithms/fast:
 	$(MAKE) -f CMakeFiles/test_sorting_algorithms.dir/build.make CMakeFiles/test_sorting_algorithms.dir/build
 .PHONY : test_sorting_algorithms/fast
 
-src/main.o: src/main.cpp.o
-
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/efficiency_tests.dir/build.make CMakeFiles/efficiency_tests.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
-
-src/main.i: src/main.cpp.i
-
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/efficiency_tests.dir/build.make CMakeFiles/efficiency_tests.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/efficiency_tests.dir/build.make CMakeFiles/efficiency_tests.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
-
 src/test_sorting_algorithms.o: src/test_sorting_algorithms.cpp.o
 
 .PHONY : src/test_sorting_algorithms.o
@@ -190,6 +163,33 @@ src/test_sorting_algorithms.cpp.s:
 	$(MAKE) -f CMakeFiles/test_sorting_algorithms.dir/build.make CMakeFiles/test_sorting_algorithms.dir/src/test_sorting_algorithms.cpp.s
 .PHONY : src/test_sorting_algorithms.cpp.s
 
+src/time_test.o: src/time_test.cpp.o
+
+.PHONY : src/time_test.o
+
+# target to build an object file
+src/time_test.cpp.o:
+	$(MAKE) -f CMakeFiles/efficiency_tests.dir/build.make CMakeFiles/efficiency_tests.dir/src/time_test.cpp.o
+.PHONY : src/time_test.cpp.o
+
+src/time_test.i: src/time_test.cpp.i
+
+.PHONY : src/time_test.i
+
+# target to preprocess a source file
+src/time_test.cpp.i:
+	$(MAKE) -f CMakeFiles/efficiency_tests.dir/build.make CMakeFiles/efficiency_tests.dir/src/time_test.cpp.i
+.PHONY : src/time_test.cpp.i
+
+src/time_test.s: src/time_test.cpp.s
+
+.PHONY : src/time_test.s
+
+# target to generate assembly for a file
+src/time_test.cpp.s:
+	$(MAKE) -f CMakeFiles/efficiency_tests.dir/build.make CMakeFiles/efficiency_tests.dir/src/time_test.cpp.s
+.PHONY : src/time_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -200,12 +200,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... efficiency_tests"
 	@echo "... test_sorting_algorithms"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
 	@echo "... src/test_sorting_algorithms.o"
 	@echo "... src/test_sorting_algorithms.i"
 	@echo "... src/test_sorting_algorithms.s"
+	@echo "... src/time_test.o"
+	@echo "... src/time_test.i"
+	@echo "... src/time_test.s"
 .PHONY : help
 
 
