@@ -1,0 +1,9 @@
+\babel@toc {polish}{}
+\contentsline {section}{\numberline {1}Wprowadzenie}{2}
+\contentsline {section}{\numberline {2}Opis badanych algorytm\IeC {\'o}w sortowania}{2}
+\contentsline {subsection}{\numberline {2.1}Sortowanie przez scalanie}{2}
+\contentsline {subsection}{\numberline {2.2}Sortowanie szybkie}{2}
+\contentsline {subsection}{\numberline {2.3}Sortowanie przez kopcowanie}{2}
+\contentsline {section}{\numberline {3}Przebieg eksperyment\IeC {\'o}w}{3}
+\contentsline {section}{\numberline {4}Podsumowanie i wnioski}{4}
+\contentsline {section}{\numberline {5}Literatura}{4}

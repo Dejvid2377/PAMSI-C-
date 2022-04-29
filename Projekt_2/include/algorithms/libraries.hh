@@ -19,5 +19,6 @@ using std::ofstream;
 
 #define EXP_RESULTS1 "wyniki_merge.txt"
 #define EXP_RESULTS2 "wyniki_quick.txt"
+#define EXP_RESULTS3 "wyniki_heap.txt"
 
 #endif

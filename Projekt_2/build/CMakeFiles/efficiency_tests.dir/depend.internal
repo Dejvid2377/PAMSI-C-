@@ -3,6 +3,7 @@
 
 CMakeFiles/efficiency_tests.dir/src/time_test.cpp.o
  ../include/algorithms/All_Structures.hh
+ ../include/algorithms/Heap.hh
  ../include/algorithms/bubblesort.h
  ../include/algorithms/heapsort.h
  ../include/algorithms/insertsort.h

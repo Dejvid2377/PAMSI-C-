@@ -8,5 +8,6 @@
 #include "mergesort.h"
 #include "quicksort.h"
 #include "shellsort.h"
+#include "Heap.hh"
 
 #endif

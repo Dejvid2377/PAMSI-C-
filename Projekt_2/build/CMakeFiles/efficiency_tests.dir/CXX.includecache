@@ -21,14 +21,22 @@ quicksort.h
 ../include/algorithms/quicksort.h
 shellsort.h
 ../include/algorithms/shellsort.h
+Heap.hh
+../include/algorithms/Heap.hh
+
+../include/algorithms/Heap.hh
+libraries.hh
+../include/algorithms/libraries.hh
 
 ../include/algorithms/bubblesort.h
 vector
 -
 
 ../include/algorithms/heapsort.h
-vector
--
+Heap.hh
+../include/algorithms/Heap.hh
+libraries.hh
+../include/algorithms/libraries.hh
 
 ../include/algorithms/insertsort.h
 vector
