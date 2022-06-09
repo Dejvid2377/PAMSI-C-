@@ -107,6 +107,79 @@ void dijkstra(Graph<int>& graph, int sourceIndex, ShortestPathResult& result)
   }
 }
 
-bool bellmanFord(Graph<int>& graph, int sourceIndex, ShortestPathResult& result);
+bool bellmanFord(Graph<int>& graph, int sourceIndex, ShortestPathResult& result)
+{
+  auto startVertex = graph.vertexID(sourceIndex);
+  list<shared_ptr<Vertex<int>>> vertices = graph.vertices();
+  list<shared_ptr<Edge<int>>> edges = graph.edges();
+  typename list<shared_ptr<Vertex<int>>>::iterator verticeIter = vertices.begin();
+  int size = graph.return_vAmount();
+  bool test;
+  int index;
+
+  vector<int> costs (size,10000);
+  vector<shared_ptr<Vertex<int>>> prevElem (size,nullptr);
+  vector<shared_ptr<Vertex<int>>> allVerts (size);
+  for (int i=0;verticeIter!=vertices.end();verticeIter++,i++)
+    allVerts[i] = *verticeIter; 
+  
+  index = findVertex(allVerts,startVertex);
+  costs[index] = 0;
+
+  for (int i=0 ; i<size ; i++)
+  { 
+    test = true;
+    
+    for (typename list<shared_ptr<Edge<int>>>::iterator edgeIter = edges.begin();edgeIter!=edges.end();edgeIter++)
+    {
+      auto edgeValue = (*edgeIter)->return_value();
+      auto start = (*edgeIter)->return_start();
+      auto startIndex = findVertex(allVerts,start);
+      auto end = (*edgeIter)->return_end();
+      auto endIndex = findVertex(allVerts,end);
+
+      if( costs[endIndex] > (edgeValue + costs[startIndex]))
+      {
+        costs[endIndex] = costs[startIndex] + edgeValue;
+        prevElem[endIndex] = start;
+        test = false;
+      }
+    } 
+
+    if(i == (size-1))
+      return true;
+    
+    if(test)
+    {
+      test = false;
+      break;
+    }  
+  }
+
+  index = findVertex(allVerts,startVertex);
+  prevElem[index] = nullptr;
+
+  for(int i=0;i<size;i++)
+  {
+    vector <int> v;
+    v.push_back(allVerts[i]->return_value());
+    shared_ptr<Vertex<int>> ptr = prevElem[i];
+    
+    while (ptr)
+    {  
+      v.insert(v.begin(),ptr->return_value());
+      index = findVertex(allVerts,ptr);
+      ptr = prevElem[index];
+    }
+    result.insert( { allVerts[i]->return_value(), make_pair(costs[i] , v)}); 
+  }
+  return test;
+}
+
+
+
+
+
+
 
 #endif /* SHORTEST_PATH_ALGORITHMS_HPP_ */
