@@ -1,0 +1,102 @@
+Algorytm Dijkstry dla macierzy
+***************************************************
+Ilosc wierzcholkow: 10
+Gestosc grafu: 0.25
+
+sredni czas: 0.000161824
+***************************************************
+Ilosc wierzcholkow: 10
+Gestosc grafu: 0.5
+
+sredni czas: 0.000237683
+***************************************************
+Ilosc wierzcholkow: 10
+Gestosc grafu: 0.75
+
+sredni czas: 0.000304991
+***************************************************
+Ilosc wierzcholkow: 10
+Gestosc grafu: 1
+
+sredni czas: 0.000366376
+***************************************************
+Ilosc wierzcholkow: 50
+Gestosc grafu: 0.25
+
+sredni czas: 0.00747518
+***************************************************
+Ilosc wierzcholkow: 50
+Gestosc grafu: 0.5
+
+sredni czas: 0.0112332
+***************************************************
+Ilosc wierzcholkow: 50
+Gestosc grafu: 0.75
+
+sredni czas: 0.0190721
+***************************************************
+Ilosc wierzcholkow: 50
+Gestosc grafu: 1
+
+sredni czas: 0.0215441
+***************************************************
+Ilosc wierzcholkow: 100
+Gestosc grafu: 0.25
+
+sredni czas: 0.0427588
+***************************************************
+Ilosc wierzcholkow: 100
+Gestosc grafu: 0.5
+
+sredni czas: 0.0808704
+***************************************************
+Ilosc wierzcholkow: 100
+Gestosc grafu: 0.75
+
+sredni czas: 0.111519
+***************************************************
+Ilosc wierzcholkow: 100
+Gestosc grafu: 1
+
+sredni czas: 0.156546
+***************************************************
+Ilosc wierzcholkow: 150
+Gestosc grafu: 0.25
+
+sredni czas: 0.135219
+***************************************************
+Ilosc wierzcholkow: 150
+Gestosc grafu: 0.5
+
+sredni czas: 0.244089
+***************************************************
+Ilosc wierzcholkow: 150
+Gestosc grafu: 0.75
+
+sredni czas: 0.357583
+***************************************************
+Ilosc wierzcholkow: 150
+Gestosc grafu: 1
+
+sredni czas: 0.468814
+***************************************************
+Ilosc wierzcholkow: 200
+Gestosc grafu: 0.25
+
+sredni czas: 0.287225
+***************************************************
+Ilosc wierzcholkow: 200
+Gestosc grafu: 0.5
+
+sredni czas: 0.576563
+***************************************************
+Ilosc wierzcholkow: 200
+Gestosc grafu: 0.75
+
+sredni czas: 0.831475
+***************************************************
+Ilosc wierzcholkow: 200
+Gestosc grafu: 1
+
+sredni czas: 1.14297
+***************************************************
