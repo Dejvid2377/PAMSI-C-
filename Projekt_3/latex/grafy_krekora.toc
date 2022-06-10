@@ -1,0 +1,8 @@
+\babel@toc {polish}{}
+\contentsline {section}{\numberline {1}Wprowadzenie}{2}
+\contentsline {section}{\numberline {2}Opis badanych algorytm\IeC {\'o}w}{2}
+\contentsline {subsection}{\numberline {2.1}Algorytm Dijkstry}{2}
+\contentsline {subsection}{\numberline {2.2}Algorytm Bellmana-Forda}{2}
+\contentsline {section}{\numberline {3}Przebieg eksperyment\IeC {\'o}w}{3}
+\contentsline {section}{\numberline {4}Podsumowanie i wnioski}{7}
+\contentsline {section}{\numberline {5}Bibliografia}{7}
